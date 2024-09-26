@@ -1,0 +1,12 @@
+name: ex07app
+title: ex07app
+username: iris-yi-jiang
+account: iris-yi-jiang
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 12773533
+bundleId: 9124905
+url: https://iris-yi-jiang.shinyapps.io/ex07app/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
