@@ -7,7 +7,18 @@ ui <- fluidPage(
   titlePanel("Temperatures at Major Airports"),
   sidebarLayout(
     sidebarPanel(
-      radioButtons(
+      # radioButtons(
+      #   "name", "Select an airport",
+      #   choices = c(
+      #     "Seattle-Tacoma",
+      #     "Raleigh-Durham",
+      #     "Houston Intercontinental",
+      #     "Denver",
+      #     "Los Angeles",
+      #     "John F. Kennedy"
+      #   )
+      # )
+      selectInput(
         "name", "Select an airport",
         choices = c(
           "Seattle-Tacoma",
@@ -16,8 +27,9 @@ ui <- fluidPage(
           "Denver",
           "Los Angeles",
           "John F. Kennedy"
-        )
-      ) 
+        ),
+        multiple=TRUE
+      )
     ),
     mainPanel( 
       plotOutput("plot")
